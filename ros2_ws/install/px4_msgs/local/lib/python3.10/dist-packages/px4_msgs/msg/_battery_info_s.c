@@ -1,0 +1,1 @@
+/workspace/ros2_ws/build/px4_msgs/rosidl_generator_py/px4_msgs/msg/_battery_info_s.c

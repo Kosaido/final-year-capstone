@@ -1,0 +1,1 @@
+/workspace/ros2_ws/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/fixed_wing_lateral_status.h

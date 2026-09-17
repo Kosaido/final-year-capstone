@@ -1,0 +1,1 @@
+/workspace/ros2_ws/src/px4_msgs/msg/TrajectorySetpoint6dof.msg
