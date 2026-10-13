@@ -1,0 +1,12 @@
+[Unit]
+Description=Full project startup (agent + GPS check)
+After=network.target
+
+[Service]
+ExecStart=/home/car/project_startup.sh #Edit based on the username of the drone's PI
+Restart=on-failure
+RestartSec=3
+User=car
+
+[Install]
+WantedBy=multi-user.target
