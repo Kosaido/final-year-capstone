@@ -1,1 +1,2 @@
 This is merely for my Capstone Project. The codes are all in Drone codes folder. It includes auto start for Micro-XRCE-DDS-Agent for each drone's Raspberry Pi, and Offboard Control for the drone. In addition, the newest file addition is the formation and collision avoidance test for two drones first. If the code works, then another code will have three drones on a formation.
+Update: The test will be done for avoidance first then formation at 18th of November, will update any revision if the code works or not.
