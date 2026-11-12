@@ -95,7 +95,7 @@ LEADER_ID = 0
 MASTER_ID = 0          # owns the test schedule
 
 # --- UDP link between the three drones. REAL: each Pi's IP (`hostname -I`), same Wi-Fi/router. ---
-PEER_IP = ({0: "CHANGE_ME", 1: "CHANGE_ME", 2: "CHANGE_ME"} if DEPLOYMENT == "REAL"
+PEER_IP = ({0: "192.168.100.2", 1: "192.168.100.3", 2: "192.168.100.4"} if DEPLOYMENT == "REAL"
            else {0: "127.0.0.1", 1: "127.0.0.1", 2: "127.0.0.1"})
 BASE_PORT = 14800            # drone N listens on BASE_PORT + N
 NEIGHBOR_TIMEOUT_SEC = 0.5   # older than this = stale
