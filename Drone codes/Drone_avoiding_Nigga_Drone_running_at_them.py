@@ -87,8 +87,8 @@ BEACON_NAMESPACE = "/px4_1" if DEPLOYMENT == "SITL" else ""
 AVOIDER_MAV_SYS_ID = 1
 
 # --- UDP link: AVOIDER_IP = avoider Pi, OTHER_IP = the Pi (or laptop) running beacon/intruder ---
-AVOIDER_IP = "CHANGE_ME" if DEPLOYMENT == "REAL" else "127.0.0.1"
-OTHER_IP = "CHANGE_ME" if DEPLOYMENT == "REAL" else "127.0.0.1"
+AVOIDER_IP = "192.168.0.2" if DEPLOYMENT == "REAL" else "127.0.0.1"
+OTHER_IP = "192.168.0.3" if DEPLOYMENT == "REAL" else "127.0.0.1"
 AVOIDER_PORT = 14700
 OTHER_PORT = 14701
 NEIGHBOR_TIMEOUT_SEC = 0.5
