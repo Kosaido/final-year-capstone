@@ -411,7 +411,13 @@ class TriangleNode(Node):
         now = time.monotonic()
         if now - self._last_log.get(key, -1e9) >= period:
             self._last_log[key] = now
-            getattr(self.get_logger(), level)(msg)
+            # rclpy fixes the severity of each logging call site, so a single line that logs both
+            # info and warn raises "severity cannot be changed between calls". Keep one call per severity.
+            lg = self.get_logger()
+            if level == "warn":
+                lg.warn(msg)
+            else:
+                lg.info(msg)
 
     def set_phase(self, p):
         self.get_logger().info(f"Phase: {self.phase} -> {p}")
